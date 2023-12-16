@@ -99,6 +99,49 @@ a {
   background-color: #dedce1;
   transition: 0.4s cubic-bezier(1, 0.2, 0.2, 1);
 }
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  #head {
+    height: 10vh;
+  }
+  #page_header {
+    height: 10vh;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 10%;
+    height: 100%;
+    margin-left: 12%;
+  }
+  img {
+    width: 11vh;
+    padding: 0.1rem;
+  }
+  .nav-ul {
+    width: 10%;
+    height: 10%;
+    gap: 0.1rem;
+    justify-content: flex-start;
+  }
+}
+#menuBtn {
+  display: block;
+  margin-right: 12%;
+}
+#page_header .nav-ul {
+  position: fixed;
+  width: 250px;
+  z-index: 1;
+  top: 67px;
+  right: -250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(80vh - 70px);
+  border-radius: 30% 0% 0% 100%;
+  background-color: #1d3557;
+  transition: right 0.4s cubic-bezier(1, 0.2, 0.2, 1);
+  /* border-top: 1px solid black; */
+}
 @media screen and (max-width: 572px) and (min-width: 400px) {
   #head {
     height: 10vh;
@@ -412,6 +455,45 @@ i {
     filter: drop-shadow(0px 0px 2px rgb(89, 83, 83));
   }
 }
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  #home-section {
+    top: 10vh;
+    gap: 0.1rem;
+    height: 100vh;
+    padding: 0.5rem;
+    flex-wrap: wrap-reverse;
+  }
+  #content-section {
+    width: 100vw;
+    height: 42vh;
+    padding: 0.2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  #content-section h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+  .social {
+    padding: 10px;
+    margin-top: 1px;
+    justify-content: space-evenly;
+  }
+  #img-div {
+    width: 100%;
+    height: 50%;
+    margin-top: 0px;
+  }
+  #img-div .img-shado {
+    width: 290px;
+    height: 300px;
+    padding: 1px;
+    overflow: hidden;
+    border-radius: 148px;
+    border: 4px solid rgb(71, 67, 67);
+    filter: drop-shadow(0px 0px 2px rgb(89, 83, 83));
+  }
+}
 
 /*-----------------About_section------------------------ */
 #about-section {
@@ -480,6 +562,27 @@ i {
     text-align: center;
     word-spacing: 5px;
     margin: 30px;
+  }
+  #about-section .about-me p {
+    font-size: 1rem;
+    word-spacing: 5px;
+    line-height: 1.1rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  #about-section {
+    height: 50vh;
+    top: 10%;
+  }
+  #about-section .about-me {
+    width: 100%;
+  }
+  #about-section .about-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    word-spacing: 5px;
+    margin: 15px;
   }
   #about-section .about-me p {
     font-size: 1rem;
@@ -610,7 +713,28 @@ i {
     width: 85vw;
   }
 }
-@media screen and (max-width: 572px) and (min-width: 400px) {
+@media screen and (max-width: 562px) and (min-width: 400px) {
+  #progress {
+    top: 65px;
+    height: 74vh;
+  }
+  #progress .main-tital {
+    height: 16vh;
+    padding-top: 0px;
+    word-spacing: 2px;
+  }
+  .main-tital {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .skill-container .subject {
+    width: 95%;
+  }
+  .progress-bar {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 300px) {
   #progress {
     top: 65px;
     height: 74vh;
@@ -800,5 +924,39 @@ i:hover {
   }
   .socia {
     height: 20vh;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  #contect-us {
+    top: 65px;
+    height: 100vh;
+  }
+  #contect-us .contect-way .icon {
+    width: 31%;
+    height: 91%;
+  }
+  #contect-us .contect-way {
+    height: 29%;
+    padding: 0.3rem;
+  }
+  .contect-title {
+    height: 10vh;
+  }
+  .icon p {
+    padding: 0.3rem;
+  }
+  .contect-form div {
+    left: 8%;
+    gap: 1rem;
+    width: 81vw;
+  }
+  .contect-form div input {
+    width: 70vw;
+  }
+  .socia {
+    height: 20vh;
+  }
+  .contect-form div button {
+    padding: 6px;
   }
 }
