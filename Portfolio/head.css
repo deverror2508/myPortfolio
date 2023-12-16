@@ -122,6 +122,49 @@ a {
     gap: 0.1rem;
     justify-content: flex-start;
   }
+  #page_header .nav-ul {
+    position: fixed;
+    width: 200px;
+    z-index: 1;
+    top: 67px;
+    right: -250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(80vh - 70px);
+    border-radius: 30% 0% 0% 100%;
+    background-color: #1d3557;
+    transition: right 0.4s cubic-bezier(1, 0.2, 0.2, 1);
+    border-top: 1px solid black;
+  }
+  #page_header .nav-ul .li-list {
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+  #page_header .nav-ul .li-list:nth-child(1) {
+    margin-top: 5rem;
+  }
+  .li-list {
+    width: 50%;
+    height: 10%;
+    padding: 1px;
+  }
+  #menuBtn.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  #menuBtn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #menuBtn.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  #page_header .nav-ul.active {
+    right: 0;
+  }
+  .li-list {
+    padding: 0.2rem;
+  }
 }
 #menuBtn {
   display: block;
