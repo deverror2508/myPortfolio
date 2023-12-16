@@ -166,25 +166,6 @@ a {
     padding: 0.2rem;
   }
 }
-#menuBtn {
-  display: block;
-  margin-right: 12%;
-}
-#page_header .nav-ul {
-  position: fixed;
-  width: 250px;
-  z-index: 1;
-  top: 67px;
-  right: -250px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: calc(80vh - 70px);
-  border-radius: 30% 0% 0% 100%;
-  background-color: #1d3557;
-  transition: right 0.4s cubic-bezier(1, 0.2, 0.2, 1);
-  /* border-top: 1px solid black; */
-}
 @media screen and (max-width: 572px) and (min-width: 400px) {
   #head {
     height: 10vh;
