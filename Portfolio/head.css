@@ -122,6 +122,10 @@ a {
     gap: 0.1rem;
     justify-content: flex-start;
   }
+  #menuBtn {
+    display: block;
+    margin-right: 12%;
+  }
   #page_header .nav-ul {
     position: fixed;
     width: 200px;
